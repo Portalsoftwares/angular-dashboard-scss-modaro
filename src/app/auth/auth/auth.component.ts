@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,11 +7,35 @@ import { Router } from '@angular/router';
   templateUrl: './auth.component.html',
   styleUrls: ['./auth.component.scss']
 })
-export class AuthComponent {
+export class AuthComponent implements OnInit {
+  loginForm: FormGroup = new FormGroup({});
+  errorMessage: string = '';
 
-  constructor( private router: Router) {}
+  constructor(
+    private formBuilder: FormBuilder,
+    private router: Router
+  ) {}
+
+  ngOnInit() {
+    this.loginForm = this.formBuilder.group({
+      username: ['', Validators.required],
+      password: ['', Validators.required]
+    });
+  }
 
   login() {
-    this.router.navigateByUrl('/dashboard/student/studentCreate');
+    if (this.loginForm!.valid) {
+      const { username, password } = this.loginForm!.value;
+      if (username === 'admin' && password === 'password123') {
+        this.router.navigateByUrl('/dashboard/student/studentCreate');
+      } else {
+        this.errorMessage = 'Invalid username or password.<br>Please try again.';
+        this.loginForm.reset();
+
+      }
+    } else {
+      this.errorMessage = 'Please fill in all required fields.';
+      this.loginForm.reset();
+    }
   }
 }

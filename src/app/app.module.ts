@@ -9,12 +9,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PagesModule } from './pages/pages.module';
 import { StudentModule } from './student/student.module';
 import { AuthModule } from './auth/auth.module';
-
+import { InterestModule } from './interests/interest/interest.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -23,8 +25,10 @@ import { AuthModule } from './auth/auth.module';
     NgbModule,
     PagesModule,
     StudentModule,
-    AuthModule
-    
+    AuthModule,
+    InterestModule,
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
