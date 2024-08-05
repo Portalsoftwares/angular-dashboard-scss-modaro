@@ -1,1 +1,34 @@
-<p>student-list works!</p>
+
+<div class="container">
+  <h1>Lista de Estudantes</h1>
+
+  <div class="table">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Idade</th>
+          <th>Curso</th>
+          <th>Opções</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let student of students">
+          <td>{{ student.name }}</td>
+          <td>{{ student.age }}</td>
+          <td>{{ student.grade }}</td>
+
+          <td>
+            <a [routerLink]="[ '../studentEdit', student.id]">Editar</a>
+            <a [routerLink]="[ '../studentDetails', student.id]">Detalhes</a>
+            <a (click)="deleteStudent(student)">Excluir</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+
+

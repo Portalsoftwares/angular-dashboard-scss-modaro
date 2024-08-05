@@ -1,6 +1,46 @@
+<div class="container">
+  <div class="pesquisa">
+    <form [formGroup]="searchForm" (ngSubmit)="search()">
+      <div class="form">
+        <div class="form-group">
+          <label for="tipo">Tipo:</label>
+          <input type="text" id="tipo" class="form-control" placeholder="Digite o tipo" formControlName="type">
+        </div>
+        <div class="form-group">
+          <label for="cidade">Name:</label>
+          <input type="text" id="name" class="form-control" placeholder="Digite a cidade" formControlName="name">
+        </div>
+        <div class="form-group">
+          <label for="valor">Valor:</label>
+          <input type="number" id="valor" class="form-control" placeholder="Digite o valor" formControlName="price">
 
-<div class="fundo-cor">
-  <p>interest works!</p>
+        </div>
+
+          <button type="submit" class="btn btn-primary">Search</button>
+
+      </div>
+    </form>
+  </div>
 </div>
+<div class="pesquisa-result">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Tipo</th>
+        <th>Name</th>
+        <th>Valor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngIf="filtrados.length === 0">
+        <td colspan="3">No items found</td>
+      </tr>
+      <tr *ngFor="let item of filtrados">
+        <td>{{ item.type }}</td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.price }}</td>
+      </tr>
 
-
+    </tbody>
+  </table>
+</div>

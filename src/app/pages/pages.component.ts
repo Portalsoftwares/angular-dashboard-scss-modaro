@@ -9,8 +9,7 @@ import { BreakpointObserver } from '@angular/cdk/layout';
 })
 export class PagesComponent {
 
-  @ViewChild(MatSidenav)
-  sidenav!: MatSidenav;
+  @ViewChild(MatSidenav) sidenav!: MatSidenav;
 
   constructor( private observer: BreakpointObserver, private cd: ChangeDetectorRef) {
 
@@ -24,7 +23,7 @@ export class PagesComponent {
         this.sidenav.close();
       } else {
         this.sidenav.mode = 'side';
-        this.sidenav.open();      
+        this.sidenav.open();
       }
     })
     this.cd.detectChanges();

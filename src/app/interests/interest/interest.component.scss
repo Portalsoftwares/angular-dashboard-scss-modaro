@@ -1,14 +1,57 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Espaçamento entre os elementos do formulário */
+}
+label {
+ font-size: 12px;
+ font-weight: bold;
+ margin-bottom: 4px;
+}
+.form-group {
+  flex: 1;
+  min-width: 200px; /* Largura mínima para os inputs */
+}
 
-*{
-  margin: 0;
-  padding: 0;
+button.btn {
+  align-self: flex-center; /* Alinha o botão ao final do contêiner flex */
+  margin-top: 29px; /* Espaçamento superior para alinhar com os inputs */
+  margin-bottom:10px ;
 
 }
 
-.fundo-cor{
-
-
-
-  background-color: burlywood;
+input.form-control {
+  width: 100%; /* Faz os inputs ocuparem toda a largura disponível */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px; /* Espaçamento inferior para criar espaço entre os inputs */
+  font-size: 12px;
+  color: rgb(31, 2, 34);
 }
 
+.btn {
+  font-size: 12px;
+  padding: 7px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.btn:hover {
+  background-color: #0056b3;
+}
+
+.table {
+  margin: 20px 20px;
+  border: 1px solid #ccc;
+  font-size: 12px;
+  width: 90%;
+}
+
+.table th {
+  font-weight: bold;
+}

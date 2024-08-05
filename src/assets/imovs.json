@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Ap 1",
+    "type": "Apartment",
+    "price": 100000
+  },
+  {
+    "id": 2,
+    "name": "Property 2",
+    "type": "House",
+    "price": 200000
+  },
+  {
+    "id": 3,
+    "name": "Property 3",
+    "type": "Condo",
+    "price": 150000
+  },
+  {
+    "id": 4,
+    "name": "Property 4",
+    "type": "Townhouse",
+    "price": 180000
+  },
+  {
+    "id": 5,
+    "name": "Property 5",
+    "type": "Apartment",
+    "price": 120000
+  },
+  {
+    "id": 6,
+    "name": "Property 6",
+    "type": "House",
+    "price": 250000
+  },
+  {
+    "id": 7,
+    "name": "Property 7",
+    "type": "Condo",
+    "price": 170000
+  },
+  {
+    "id": 8,
+    "name": "Property 8",
+    "type": "Townhouse",
+    "price": 190000
+  },
+  {
+    "id": 9,
+    "name": "Property 9",
+    "type": "Apartment",
+    "price": 110000
+  },
+  {
+    "id": 10,
+    "name": "Property 10",
+    "type": "House",
+    "price": 220000
+  },
+  {
+    "id": 11,
+    "name": "Property 11",
+    "type": "Condo",
+    "price": 160000
+  },
+  {
+    "id": 12,
+    "name": "Property 12",
+    "type": "Townhouse",
+    "price": 200000
+  },
+  {
+    "id": 13,
+    "name": "Property 13",
+    "type": "Apartment",
+    "price": 130000
+  },
+  {
+    "id": 14,
+    "name": "Property 14",
+    "type": "House",
+    "price": 240000
+  },
+  {
+    "id": 15,
+    "name": "Property 15",
+    "type": "Condo",
+    "price": 180000
+  },
+  {
+    "id": 16,
+    "name": "Property 16",
+    "type": "Townhouse",
+    "price": 210000
+  },
+  {
+    "id": 17,
+    "name": "Property 17",
+    "type": "Apartment",
+    "price": 140000
+  },
+  {
+    "id": 18,
+    "name": "Property 18",
+    "type": "House",
+    "price": 230000
+  },
+  {
+    "id": 19,
+    "name": "Property 19",
+    "type": "Condo",
+    "price": 190000
+  },
+  {
+    "id": 20,
+    "name": "Property 20",
+    "type": "Townhouse",
+    "price": 220000
+  }
+]

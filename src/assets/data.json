@@ -1,0 +1,44 @@
+[
+  {
+      "id": 1,
+      "name": "John Doe",
+      "age": 18,
+      "grade": "A"
+  },
+  {
+      "id": 2,
+      "name": "Jane Smith",
+      "age": 19,
+      "grade": "B"
+  },
+  {
+      "id": 3,
+      "name": "Michael Johnson",
+      "age": 20,
+      "grade": "C"
+  },
+  {
+      "id": 4,
+      "name": "Emily Davis",
+      "age": 18,
+      "grade": "A"
+  },
+  {
+      "id": 5,
+      "name": "David Wilson",
+      "age": 19,
+      "grade": "B"
+  },
+  {
+      "id": 6,
+      "name": "Sophia Martinez",
+      "age": 20,
+      "grade": "C"
+  },
+  {
+      "id": 7,
+      "name": "Daniel Anderson",
+      "age": 18,
+      "grade": "A"
+  }
+]
