@@ -4,6 +4,7 @@ import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { Imovs } from 'src/app/model/imovs';
 import * as tiposData from 'src/assets/imovs.json';
 
+
 @Component({
   selector: 'app-interest',
   templateUrl: './interest.component.html',
@@ -46,6 +47,13 @@ export class InterestComponent {
     const type = this.searchForm.get('type')?.value;
     const preco = this.searchForm.get('price')?.value;
 
+    // Check if all form values are empty
+    if (!nome && !type && !preco) {
+        this.filtrados = [];
+        console.log('Filtered tipos:', this.filtrados);
+        return;
+    }
+
     // Perform search using the form values
     const filteredTipos = this.tipos.filter(tipo => {
       if (nome && tipo.name !== nome) {
@@ -59,9 +67,10 @@ export class InterestComponent {
       }
       return true;
     });
+    this.filtrados = [];
     this.filtrados = filteredTipos;
     console.log('Filtered tipos:', filteredTipos);
-  }
+}
 
   // constructor(private http: HttpClient) {
   //   this.data = tiposData as Imovs[];
@@ -81,6 +90,13 @@ export class InterestComponent {
   //   );
   // }
 
+  editItem(data: any) {
+    console.log('editItem', data);
+
+  }
+  deleteItem(data: any) {
+    console.log('deleteItem', data);
+  }
 
 
 }
